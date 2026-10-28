@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffe3f1">
+  <meta name="description" content="DesktopPet رفيق تفاعلي لسطح مكتب Windows يساعدك على التركيز وتنظيم المهام وبناء عادات يومية ألطف.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DesktopPet — مساحة صغيرة ليوم أفضل">
+  <meta property="og:description" content="شخصية لطيفة، مؤقّت تركيز، مهام، إحصائيات وتذكيرات في تطبيق Windows واحد.">
+  <meta property="og:image" content="assets/og.png">
+  <meta name="color-scheme" content="light dark">
+  <title>DesktopPet — مساحة صغيرة ليوم أفضل</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cute.css">
+  <link rel="stylesheet" href="extras.css">
+  <link rel="stylesheet" href="dark.css">
+  <link rel="stylesheet" href="live.css">
+  <link rel="stylesheet" href="cute2.css">
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem("desktoppet-site-theme")==="dark"?"dark":"light"}catch(e){document.documentElement.dataset.theme="light"}</script>
+</head>
+<body>
+  <a class="skip-link" href="#top" data-i18n="skipToContent">تخطَّ إلى المحتوى</a>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="DesktopPet home">
+      <span class="brand-mark"><img src="assets/favicon.ico" alt=""></span>
+      <span>Desktop<span class="brand-accent">Pet</span><small data-i18n="brandTag">رفيق سطح المكتب</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#features" data-i18n="navFeatures">المميزات</a>
+      <a href="#how" data-i18n="navHow">كيف يعمل</a>
+      <a href="#faq" data-i18n="navFaq">الأسئلة الشائعة</a>
+    </nav>
+    <div class="header-actions">
+      <button class="language-btn" id="languageToggle" type="button" aria-label="Switch language">EN</button>
+      <button class="theme-btn" id="themeToggle" type="button" aria-label="التبديل إلى الوضع الداكن" aria-pressed="false"><svg class="ic-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7 7 17M17 7l1.7-1.7"/></svg><svg class="ic-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 13.2A8.6 8.6 0 0 1 10.8 3.5a8.6 8.6 0 1 0 9.7 9.7Z"/></svg></button>
+      <a class="header-download" data-github="download" href="https://github.com/Pr0fes0rx/DesktopPet-Releases/releases/download/v1.2.1/DesktopPet-Setup-1.2.1.exe"><span data-i18n="navDownload">تحميل البرنامج</span><span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span><span data-i18n="eyebrow">رفيق لطيف لنظام Windows</span><span class="release-version" id="releaseVersion">v1.2.1</span></div>
+        <h1 data-i18n="heroTitle">خلي التركيز عادة،<br><span>والاستراحة جزء منها.</span></h1>
+        <p class="hero-lead" data-i18n="heroDesc">شخصية تفاعلية تعيش على سطح مكتبك، تمشي وتتفاعل معك، وتساعدك تنظّم يومك بمؤقّت تركيز، مهام، إحصائيات وتذكيرات ذكية.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" data-github="download" href="https://github.com/Pr0fes0rx/DesktopPet-Releases/releases/download/v1.2.1/DesktopPet-Setup-1.2.1.exe"><span class="download-icon">↓</span><span data-i18n="downloadLatest">تحميل أحدث إصدار</span></a>
+          <a class="btn btn-secondary" data-github="release" href="https://github.com/Pr0fes0rx/DesktopPet-Releases/releases/latest" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 .1.74 2.14 3.73 1.51.1-.73.39-1.23.7-1.52-2.5-.28-5.13-1.25-5.13-5.58 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.44.11-2.99 0 0 .95-.3 3.08 1.16A10.7 10.7 0 0 1 12 6.65c.96 0 1.92.13 2.82.38 2.13-1.45 3.08-1.16 3.08-1.16.61 1.55.23 2.71.11 2.99.72.79 1.16 1.8 1.16 3.03 0 4.34-2.64 5.3-5.15 5.58.4.35.75 1.03.75 2.08v3.1c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg><span data-i18n="viewGithub">استكشف GitHub</span></a>
+        </div>
+        <div class="hero-notes"><span>✓ <span data-i18n="noteWindows">مصمم لسطح مكتب Windows</span></span><span>✓ <span data-i18n="noteLang">العربية و English</span></span><span>✓ <span data-i18n="noteLocal">إعدادات قابلة للتخصيص</span></span></div>
+        <p class="release-note"><span data-i18n="releaseNote">زر التحميل يبدأ تنزيل ملف التثبيت الرسمي مباشرةً.</span> <span class="release-platform" data-i18n="releasePlatform">Windows · x64</span></p>
+      </div>
+      <div class="hero-art" aria-label="DesktopPet mascot and app preview">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="spark spark-one">✦</div><div class="spark spark-two">✧</div><div class="spark spark-three">✦</div>
+        <div class="pet-glow"></div>
+        <img class="mascot" data-pet src="assets/1.webp" alt="شخصية DesktopPet اللطيفة" fetchpriority="high" width="405" height="500">
+        <div class="floating-card focus-card">
+          <div class="mini-card-top"><span class="mini-dot"></span><span data-i18n="focusLabel">جلسة تركيز</span><span class="mini-menu">•••</span></div>
+          <strong>24:18</strong><div class="focus-track"><span></span></div>
+          <div class="mini-card-foot"><span data-i18n="focusRemaining">متبقي من الجلسة</span><span>🍃</span></div>
+        </div>
+        <div class="floating-card mood-card"><span class="mood-emoji">✨</span><div><b data-i18n="moodTitle">مزاج ممتاز</b><small data-i18n="moodSub">استمر، أنت تتقدم!</small></div><span class="mood-plus">+XP</span></div>
+        <div class="cute-bubble" id="cuteBubble" role="status"></div><div class="tiny-bubble">💧 <span data-i18n="waterBubble">وقت شرب الماء!</span></div>
+      </div>
+      <div class="hero-bottom-line"><span></span><p data-i18n="heroCaption">رفيق سطح المكتب، وليس مجرد مؤقّت آخر.</p><span></span></div>
+    </section>
+
+    <section class="quick-stats section-wrap" aria-label="Highlights">
+      <div class="quick-stat"><span class="quick-icon purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="7"/><path d="M12 9v4l2.5 2M5 5 3 7M19 5l2 2"/></svg></span><div><strong data-i18n="stat1Title">تركيز واعٍ</strong><small data-i18n="stat1Sub">جلسات وهدف يومي</small></div></div>
+      <div class="quick-stat"><span class="quick-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="m8.5 12.2 2.4 2.4 4.6-5"/></svg></span><div><strong data-i18n="stat2Title">مهام واضحة</strong><small data-i18n="stat2Sub">اربط وقتك بما تريد إنجازه</small></div></div>
+      <div class="quick-stat"><span class="quick-icon pink"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.4A4 4 0 0 1 19 10c0 5.600-7 10-7 10z"/></svg></span><div><strong data-i18n="stat3Title">عادات ألطف</strong><small data-i18n="stat3Sub">تذكيرات ماء وحركة وراحة</small></div></div>
+      <div class="quick-stat"><span class="quick-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.600 5.400 5.900.8-4.300 4.100 1 5.800L12 16.300 6.800 19.100l1-5.800L3.500 9.200l5.900-.8z"/></svg></span><div><strong data-i18n="stat4Title">تقدّم ملموس</strong><small data-i18n="stat4Sub">إحصائيات وخبرة ومستويات</small></div></div>
+    </section>
+
+    <section class="section-wrap section-block" id="features">
+      <div class="section-heading"><span class="section-kicker" data-i18n="featuresKicker">أكثر من شخصية متحركة</span><h2 data-i18n="featuresTitle">رفيق صغير، ومجموعة أدوات ليوم أفضل.</h2><p data-i18n="featuresDesc">اجمع بين الرفقة اللطيفة والتنظيم العملي، من دون أن تغادر سطح المكتب.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card feature-large"><div class="feature-top"><span class="feature-icon lilac">✦</span><span class="feature-index">01</span></div><h3 data-i18n="f1Title">شخصية تتفاعل معك</h3><p data-i18n="f1Desc">تتحرك على الشاشة، تتجول وتتفاعل مع الماوس، ويمكنها الجلوس على النوافذ أو البقاء أمامها. خصّص المظهر والسلوك كما تحب.</p><div class="feature-visual pet-visual"><span class="visual-star star-a">✧</span><img src="assets/pet6.webp" alt="" loading="lazy"><span class="visual-caption" data-i18n="petCaption">هنا دائمًا، من دون إزعاج.</span></div></article>
+        <article class="feature-card"><div class="feature-top"><span class="feature-icon mint">◷</span><span class="feature-index">02</span></div><h3 data-i18n="f2Title">مؤقّت التركيز</h3><p data-i18n="f2Desc">ابدأ جلسة، تابع الوقت، واكسب نقاط خبرة تساعدك على بناء عادة الاستمرار.</p><div class="timer-preview"><div class="timer-ring"><div><b>25:00</b><small data-i18n="timerFocus">وقت التركيز</small></div></div><span class="timer-chip" data-i18n="timerReady">جاهز لجلسة جديدة</span></div></article>
+        <article class="feature-card"><div class="feature-top"><span class="feature-icon yellow">☑</span><span class="feature-index">03</span></div><h3 data-i18n="f3Title">المهام والإنجاز</h3><p data-i18n="f3Desc">أنشئ قائمة مهام، ابدأ جلسة مرتبطة بمهمة، ثم علّمها كمكتملة عندما تنتهي.</p><div class="todo-preview"><div class="todo-row done"><span>✓</span><span data-i18n="todo1">مراجعة الملاحظات</span></div><div class="todo-row"><span class="empty-check"></span><span data-i18n="todo2">إنهاء المشروع</span></div><div class="todo-row"><span class="empty-check"></span><span data-i18n="todo3">استراحة قصيرة</span></div></div></article>
+        <article class="feature-card"><div class="feature-top"><span class="feature-icon blue">▥</span><span class="feature-index">04</span></div><h3 data-i18n="f4Title">إحصائيات وتقدّم</h3><p data-i18n="f4Desc">راجع نشاط آخر 7 أيام، أفضل يوم، متوسط التركيز، هدفك اليومي ومستوى الخبرة.</p><div class="chart-preview"><div class="chart-bars"><i style="--h:37%"></i><i style="--h:61%"></i><i style="--h:48%"></i><i style="--h:82%"></i><i style="--h:57%"></i><i style="--h:92%"></i><i style="--h:69%"></i></div><div class="chart-days"><span data-i18n="day1">س</span><span data-i18n="day2">أ</span><span data-i18n="day3">ن</span><span data-i18n="day4">ث</span><span data-i18n="day5">ر</span><span data-i18n="day6">خ</span><span data-i18n="day7">ج</span></div><div class="xp-line"><span data-i18n="levelLabel">المستوى</span><b>Lv. 04</b><span class="xp-progress"><i></i></span></div></div></article>
+        <article class="feature-card"><div class="feature-top"><span class="feature-icon pink">🍓</span><span class="feature-index">05</span></div><h3 data-i18n="f5Title">تذكيرات تراعيك</h3><p data-i18n="f5Desc">تذكيرات شرب الماء والحركة وراحة العين، مع كتم التنبيهات تلقائيًا أثناء التركيز أو استخدام تطبيق بملء الشاشة.</p><div class="reminder-list"><div><span>💧</span><span data-i18n="reminder1">اشرب بعض الماء</span><small>09:30</small></div><div><span>👀</span><span data-i18n="reminder2">أرح عينيك قليلًا</span><small>10:00</small></div></div></article>
+        <article class="feature-card"><div class="feature-top"><span class="feature-icon orange">⌁</span><span class="feature-index">06</span></div><h3 data-i18n="f6Title">تقويم وملخص يومي</h3><p data-i18n="f6Desc">اربط تقويمًا عبر ICS لتذكيرك بالأحداث، وراجع ملخص يومك وإنجازاتك في مكان واحد.</p><div class="calendar-preview"><div class="calendar-top"><span>📅</span><b data-i18n="calendarTitle">مواعيدك القادمة</b></div><div class="calendar-event"><span class="calendar-time">10:30</span><span class="calendar-pip"></span><span data-i18n="calendarEvent">موعد مهم</span></div><div class="calendar-event"><span class="calendar-time">13:00</span><span class="calendar-pip second"></span><span data-i18n="calendarEvent2">مراجعة خطة اليوم</span></div></div></article>
+        <article class="feature-card"><div class="feature-top"><span class="feature-icon lilac">✎</span><span class="feature-index">07</span></div><h3 data-i18n="f7Title">ملاحظات سريعة</h3><p data-i18n="f7Desc">دوّن فكرة بسرعة وحدد لها تذكيرًا بعد مدة أو في وقت تختاره، حتى لا تضيع منك التفاصيل الصغيرة.</p><div class="note-preview"><div class="note-preview-head"><span>✦</span><b data-i18n="notePreviewTitle">فكرة لا تنساها</b><small>•••</small></div><div class="note-lines"><i></i><i></i><i></i></div><div class="note-reminder"><span>◷</span><span data-i18n="notePreviewReminder">تذكير لاحقًا</span></div></div></article>
+        <article class="feature-card"><div class="feature-top"><span class="feature-icon mint">☾</span><span class="feature-index">08</span></div><h3 data-i18n="f8Title">تذكيرات مواقيت الصلاة</h3><p data-i18n="f8Desc">اضبط أوقات الفجر والظهر والعصر والمغرب والعشاء يدويًا، واختر تشغيل التذكيرات بما يناسبك.</p><div class="prayer-preview"><div><span data-i18n="prayerFajr">الفجر</span><b>05:10</b></div><div><span data-i18n="prayerDhuhr">الظهر</span><b>12:20</b></div><div><span data-i18n="prayerAsr">العصر</span><b>15:35</b></div><div><span data-i18n="prayerMaghrib">المغرب</span><b>18:05</b></div><div><span data-i18n="prayerIsha">العشاء</span><b>19:25</b></div></div></article>
+        <article class="feature-card"><div class="feature-top"><span class="feature-icon yellow">♙</span><span class="feature-index">09</span></div><h3 data-i18n="f9Title">متجر لإضفاء طابعك</h3><p data-i18n="f9Desc">استخدم التقدم الذي تجمعه لاقتناء قبعات وإكسسوارات وأطعمة للشخصية، وغيّر شكل رفيقك مع الوقت.</p><div class="shop-preview"><span>🧢</span><span>👓</span><span>🎀</span><span>👑</span><span>🍎</span><small data-i18n="shopPreviewLabel">اجمع النقاط وخصّص شخصيتك</small></div></article>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block new-section" id="new">
+      <div class="section-heading"><span class="section-kicker" data-x="newK">جديد في v1.2.1</span><h2 data-x="newT">ميزات جديدة تخلّي رفيقك أذكى 💖</h2></div>
+      <div class="new-grid">
+        <article class="new-card" tabindex="0"><span>📊</span><h3 data-x="n1T">مراقبة النظام</h3><p data-x="n1D">CPU وRAM وكرت الشاشة، ونافذة صغيرة تظهر عند تمرير الماوس عليها.</p></article>
+        <article class="new-card" tabindex="0"><span>📋</span><h3 data-x="n2T">سجل الحافظة</h3><p data-x="n2D">آخر 30 نسخة نصية مع تثبيت وبحث، ويتجاهل كلمات سر مديري الباسوورد.</p></article>
+        <article class="new-card" tabindex="0"><span>🎮</span><h3 data-x="n3T">ألعاب صغيرة</h3><p data-x="n3D">Catch وJump وعدّاد النقرات، مع نقاط خبرة وأفضل نتيجة محفوظة.</p></article>
+        <article class="new-card" tabindex="0"><span>🔔</span><h3 data-x="n4T">أصوات لكل حدث</h3><p data-x="n4D">10 نغمات جاهزة أو ملفك الخاص، ونظام ساعة 12 أو 24.</p></article>
+      </div>
+    </section>
+
+    <section class="how-section" id="how"><div class="section-wrap how-inner"><div class="section-heading"><span class="section-kicker" data-i18n="howKicker">ابدأ ببساطة</span><h2 data-i18n="howTitle">ثلاث خطوات، ويصبح مكتبك ألطف.</h2><p data-i18n="howDesc">لا تحتاج إلى إعداد معقد حتى تبدأ يومًا أكثر تنظيمًا.</p></div><div class="steps-grid"><article class="step"><span class="step-number">01</span><div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m-5-4 5 5 5-5M5 20h14"/></svg></div><h3 data-i18n="step1Title">حمّل التطبيق</h3><p data-i18n="step1Desc">افتح صفحة الإصدارات على GitHub ونزّل ملف التثبيت المتاح.</p></article><article class="step"><span class="step-number">02</span><div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.600 5.600l2.100 2.100M16.300 16.300l2.100 2.100M5.600 18.400l2.100-2.100M16.300 7.700l2.100-2.100"/></svg></div><h3 data-i18n="step2Title">خصّص رفيقك</h3><p data-i18n="step2Desc">اختر اللغة والمظهر والاختصارات والتنبيهات التي تناسبك.</p></article><article class="step"><span class="step-number">03</span><div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.800 5.200L19 10l-5.200 1.800L12 17l-1.800-5.200L5 10l5.200-1.800zM18 16l.8 2.200L21 19l-2.200.8L18 22l-.8-2.200L15 19l2.200-.8z"/></svg></div><h3 data-i18n="step3Title">ابدأ يومك</h3><p data-i18n="step3Desc">ابدأ مؤقّت التركيز، أنجز مهامك، وتابع تقدمك يومًا بعد يوم.</p></article></div></div></section>
+
+    <section class="section-wrap extras-section"><div class="extras-copy"><span class="section-kicker" data-i18n="extrasKicker">تفاصيل تجعل التجربة لك</span><h2 data-i18n="extrasTitle">المظهر والسلوك على طريقتك.</h2><p data-i18n="extrasDesc">واجهة عربية أو إنجليزية، سمة داكنة أو فاتحة، لون تمييز قابل للتغيير، أصوات واختصارات عامة. ويمكنك تصدير بيانات الإحصائيات والمهام والملاحظات إلى CSV أو JSON.</p><div class="tag-row"><span data-i18n="tagArabic">العربية</span><span>English</span><span data-i18n="tagThemes">داكن / فاتح</span><span data-i18n="tagExport">CSV / JSON</span><span data-i18n="tagShortcuts">اختصارات عامة</span></div></div><div class="settings-mock"><div class="mock-titlebar"><span class="mock-window-icon">⚙</span><span data-i18n="settingsTitle">إعدادات DesktopPet</span><div class="window-controls"><i></i><i></i><i></i></div></div><div class="settings-body"><div class="settings-sidebar"><span class="active">◈ <b data-i18n="appearance">المظهر والصوت</b></span><span>♧ <b data-i18n="behavior">السلوك</b></span><span>◷ <b data-i18n="reminders">التنبيهات</b></span></div><div class="settings-content"><b data-i18n="themeLabel">لون التمييز</b><div class="swatches"><i></i><i></i><i></i><i></i><i></i></div><b data-i18n="languageLabel">اللغة</b><div class="language-select"><span data-i18n="arabicFull">العربية</span><span>⌄</span></div><div class="setting-toggle-row"><span data-i18n="soundLabel">تفعيل الأصوات</span><i class="toggle-on"><b></b></i></div><div class="setting-toggle-row"><span data-i18n="startLabel">التشغيل مع Windows</span><i class="toggle-on"><b></b></i></div></div></div></div></section>
+
+    <section class="faq-section section-wrap" id="faq"><div class="section-heading"><span class="section-kicker" data-i18n="faqKicker">قبل التحميل</span><h2 data-i18n="faqTitle">أسئلة سريعة.</h2></div><div class="faq-list">
+      <details><summary data-i18n="faq1Q">على أي نظام يعمل DesktopPet؟</summary><p data-i18n="faq1A">DesktopPet تطبيق سطح مكتب مبني لـ Windows باستخدام .NET 8 وWPF. راجع ملاحظات الإصدار لمعرفة متطلبات النسخة المنشورة.</p></details>
+      <details><summary data-i18n="faq2Q">أين أجد أحدث نسخة؟</summary><p data-i18n="faq2A">اضغط زر التحميل لفتح صفحة Releases في مستودع GitHub. عند نشر إصدار جديد ستجد ملفات التنزيل وملاحظات التحديث هناك.</p></details>
+      <details><summary data-i18n="faq3Q">هل يدعم العربية والإنجليزية؟</summary><p data-i18n="faq3A">نعم، يتضمن التطبيق خيارًا للتبديل بين العربية والإنجليزية من الإعدادات.</p></details>
+      <details><summary data-i18n="faq4Q">هل يجب تفعيل كل التذكيرات؟</summary><p data-i18n="faq4A">لا. يمكنك تعطيل التذكيرات والأصوات والاختصارات وتعديل السلوك من الإعدادات وفق ما يناسبك.</p></details>
+      <details><summary data-i18n="faq5Q">كيف أثبّت البرنامج؟</summary><p data-i18n="faq5A">نزّل ملف DesktopPet-Setup من صفحة الإصدار الرسمي، ثم افتحه واتبع خطوات التثبيت. عند ظهور نافذة من Windows، تأكد من أن الملف نُزّل من رابط GitHub الرسمي.</p></details>
+      <details><summary data-i18n="faq6Q">هل يشارك البرنامج بياناتي؟</summary><p data-i18n="faq6A">يخزّن التطبيق إعداداته وبياناته التشغيلية محليًا على جهازك. إذا اخترت ربط تقويم ICS عبر رابط، فسيحتاج التطبيق إلى قراءة ذلك الرابط لتذكيرك بالأحداث.</p></details>
+    </div></section>
+
+    <section class="final-cta section-wrap"><div class="cta-orb"></div><div class="cta-content"><span class="section-kicker" data-i18n="ctaKicker">جاهز ليوم ألطف؟</span><h2 data-i18n="ctaTitle">خلّي رفيقك يرافقك في كل خطوة.</h2><p data-i18n="ctaDesc">نزّل DesktopPet من صفحة المشروع الرسمية، وابدأ بتنظيم وقتك بطريقتك.</p><div class="cta-actions"><a class="btn btn-primary" data-github="download" href="https://github.com/Pr0fes0rx/DesktopPet-Releases/releases/download/v1.2.1/DesktopPet-Setup-1.2.1.exe"><span data-i18n="ctaDownload">اذهب إلى التحميل</span><span>↗</span></a><a class="cta-github" data-github="release" href="https://github.com/Pr0fes0rx/DesktopPet-Releases/releases/latest" target="_blank" rel="noopener" data-i18n="ctaSource">ملاحظات الإصدار</a></div></div><img src="assets/pet7.webp" alt="" loading="lazy"></section>
+  </main>
+
+  <footer class="site-footer section-wrap"><a class="brand footer-brand" href="#top"><span class="brand-mark"><img src="assets/favicon.ico" alt=""></span><span>Desktop<span class="brand-accent">Pet</span><small data-i18n="brandTag">رفيق سطح المكتب</small></span></a><p data-i18n="footerCopy">مصنوع ليجعل وقتك أكثر لطفًا وتنظيمًا.</p><div class="footer-links"><a data-github="repo" href="https://github.com/" target="_blank" rel="noopener" data-i18n="footerGithub">GitHub</a><a data-github="release" href="https://github.com/" target="_blank" rel="noopener" data-i18n="footerReleases">الإصدارات</a></div><small class="copyright">© 2026 PROFESOR — All rights reserved / جميع الحقوق محفوظة</small></footer>
+  <div class="config-notice" id="configNotice" role="status" hidden><b data-i18n="configTitle">إعداد مطلوب للموقع</b><span data-i18n="configText">عدّل رابط مستودع GitHub في config.js قبل النشر حتى تعمل أزرار التحميل.</span></div>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+  <script src="motion.js"></script>
+  <script src="cute.js"></script>
+  <script src="pose.js"></script>
+  <script src="ui.js"></script>
+  <script src="live.js"></script>
+  <script src="cute2.js"></script>
+</body>
+</html>

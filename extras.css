@@ -1,0 +1,37 @@
+/* v5: theme button, button animations, pose polish */
+.theme-btn{position:relative;display:inline-grid;place-items:center;width:40px;height:40px;padding:0;cursor:pointer;background:#fff!important;border:2px solid #ffc2de!important;border-radius:999px!important;color:#d6458a;overflow:hidden;transition:transform .25s cubic-bezier(.3,1.8,.5,1),background .3s,border-color .3s}
+.theme-btn svg{grid-area:1/1;width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .5s cubic-bezier(.3,1.5,.5,1),opacity .3s}
+.theme-btn .ic-moon{fill:currentColor;stroke:none}
+.theme-btn .ic-sun{opacity:0;transform:rotate(-90deg) scale(.4)}
+.theme-btn:hover{transform:translateY(-2px) rotate(-8deg) scale(1.08)}
+.theme-btn.spin svg{animation:themeSpin .6s cubic-bezier(.3,1.5,.5,1)}
+@keyframes themeSpin{from{rotate:-200deg;scale:.4}to{rotate:0deg;scale:1}}
+
+/* animated buttons */
+.btn,.header-download,.language-btn,.theme-btn,.cta-github{position:relative;overflow:hidden;isolation:isolate;-webkit-tap-highlight-color:transparent}
+.btn:active,.header-download:active,.language-btn:active,.theme-btn:active,.cta-github:active{transform:scale(.93)!important;transition-duration:.08s}
+.btn-primary::after,.header-download::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.6) 50%,transparent 65%);transform:translateX(-130%);animation:btnShine 4s ease-in-out infinite}
+@keyframes btnShine{0%,55%{transform:translateX(-130%)}100%{transform:translateX(130%)}}
+.hero-actions .btn-primary,.cta-actions .btn-primary{animation:btnBob 3s ease-in-out infinite}
+@keyframes btnBob{50%{translate:0 -4px}}
+.download-icon{display:inline-block;animation:arrowDrop 1.5s ease-in-out infinite}
+@keyframes arrowDrop{0%,100%{translate:0 -2px}50%{translate:0 3px}}
+.header-download span:last-child{display:inline-block;transition:transform .3s cubic-bezier(.3,1.8,.5,1)}
+.header-download:hover span:last-child{transform:translate(2px,-2px) scale(1.2)}
+.btn-secondary,.cta-github,.language-btn{transition:transform .25s cubic-bezier(.3,1.8,.5,1),background .3s,border-color .3s,color .3s!important}
+.btn-secondary:hover,.cta-github:hover,.language-btn:hover{transform:translateY(-3px) scale(1.05) rotate(1deg);border-color:#ff8ec2!important}
+.ripple{position:absolute;z-index:0;border-radius:50%;background:rgba(255,255,255,.55);transform:scale(0);animation:ripple .6s ease-out forwards;pointer-events:none}
+.btn-secondary .ripple,.cta-github .ripple,.language-btn .ripple,.theme-btn .ripple{background:rgba(255,111,174,.28)}
+@keyframes ripple{to{transform:scale(1);opacity:0}}
+
+/* theme switch fade */
+html.theme-anim body,html.theme-anim body *{transition:background-color .35s,color .35s,border-color .35s,box-shadow .35s!important}
+
+/* pose image */
+img[data-pet]{transition:filter .3s}
+.hero-art .mascot{max-width:94%}
+
+@media(prefers-reduced-motion:reduce){
+  .btn-primary::after,.header-download::after,.hero-actions .btn-primary,.cta-actions .btn-primary,.download-icon,.theme-btn.spin svg{animation:none!important}
+  .ripple{display:none}
+}

@@ -1,0 +1,31 @@
+/* v5: dark theme (applies when <html data-theme="dark">) */
+html[data-theme=dark]{--bg:#1a1224;--bg-soft:#21172e;--panel:#251a34;--panel-2:#2d2040;--text:#fbeefa;--muted:#cdb4cc;--muted-2:#9e86a0;--line:rgba(255,142,194,.22);--pink:#ff8ec2;--purple:#c5a3ff;--purple-2:#a57bf0;--mint:#6fe0c3;color-scheme:dark}
+html[data-theme=dark] body{background:radial-gradient(circle at 12% 8%,#3a1b45 0,transparent 38%),radial-gradient(circle at 88% 18%,#2a2050 0,transparent 36%),radial-gradient(circle at 50% 100%,#17352f 0,transparent 40%),#1a1224!important;color:var(--text)!important}
+html[data-theme=dark] .site-header{background:rgba(26,18,36,.82)!important;border-bottom-color:rgba(255,142,194,.28)!important}
+html[data-theme=dark] .btn-secondary,html[data-theme=dark] .cta-github,html[data-theme=dark] .language-btn,html[data-theme=dark] .theme-btn,html[data-theme=dark] .tag-row span{background:#2d2040!important;border-color:#5b3a6e!important;color:var(--text)!important}
+html[data-theme=dark] .theme-btn{color:#ffd36e}
+html[data-theme=dark] .theme-btn .ic-moon{opacity:0;transform:rotate(90deg) scale(.4)}
+html[data-theme=dark] .theme-btn .ic-sun{opacity:1;transform:none}
+html[data-theme=dark] .btn-secondary:hover,html[data-theme=dark] .cta-github:hover,html[data-theme=dark] .language-btn:hover,html[data-theme=dark] .theme-btn:hover{border-color:#ff8ec2!important}
+html[data-theme=dark] .feature-card,html[data-theme=dark] .quick-stat,html[data-theme=dark] .step,html[data-theme=dark] .settings-mock,html[data-theme=dark] .faq-list details,html[data-theme=dark] .new-card,html[data-theme=dark] .floating-card,html[data-theme=dark] .final-cta{background:rgba(42,30,58,.86)!important;border-color:#5b3a6e!important;box-shadow:0 12px 34px #0006!important;color:var(--text)!important}
+html[data-theme=dark] .feature-card:hover,html[data-theme=dark] .new-card:hover,html[data-theme=dark] .step:hover{box-shadow:0 24px 44px #ff6fae26!important}
+html[data-theme=dark] .note-preview,html[data-theme=dark] .prayer-preview,html[data-theme=dark] .shop-preview,html[data-theme=dark] .calendar-preview,html[data-theme=dark] .todo-preview,html[data-theme=dark] .chart-preview,html[data-theme=dark] .reminder-list>div,html[data-theme=dark] .timer-preview,html[data-theme=dark] .settings-content,html[data-theme=dark] .language-select,html[data-theme=dark] .setting-toggle-row,html[data-theme=dark] .tiny-bubble{background:#2d2040!important;border-color:#5b3a6e!important;color:var(--text)!important}
+html[data-theme=dark] .note-lines i{background:#5b3a6e!important}
+html[data-theme=dark] .prayer-preview>div,html[data-theme=dark] .shop-preview>span{background:#3a2850!important}
+html[data-theme=dark] .settings-sidebar{background:#34244a!important}
+html[data-theme=dark] .section-kicker{background:#3a2050!important;color:#ff9fcb!important;border-color:#a8508a!important}
+html[data-theme=dark] .how-section{background:linear-gradient(180deg,transparent,#2a1a38 30%,#241a45 100%)!important}
+html[data-theme=dark] .step-number{color:#8a4f7c!important}
+html[data-theme=dark] .site-footer{border-top-color:#5b3a6e!important}
+html[data-theme=dark] .config-notice{background:#2d2040;color:var(--text)}
+html[data-theme=dark] .pet-glow{background:radial-gradient(circle,#c04a8a 0,#5b3a9a 45%,transparent 70%)!important;opacity:.55!important}
+html[data-theme=dark] .mascot{filter:drop-shadow(0 18px 24px #000a)}
+html[data-theme=dark] .mascot:hover{filter:drop-shadow(0 18px 24px #000a) brightness(1.06) saturate(1.1)}
+html[data-theme=dark] .cute-bubble{background:#2d2040;border-color:#a8508a;color:var(--text);box-shadow:0 10px 26px #0007}
+html[data-theme=dark] .release-version{background:#2d2040!important;color:#ff9fcb!important;border-color:#a8508a!important}
+html[data-theme=dark] .timer-ring>div,html[data-theme=dark] .timer-ring div{background:#2d2040!important;color:var(--text)!important}
+html[data-theme=dark] .timer-ring{background:conic-gradient(#ff8ec2 0 62%,#4a3160 0)!important}
+html[data-theme=dark] .timer-chip{background:#4a2a5e!important;color:#ffb3d6!important}
+html[data-theme=dark] .feature-visual{background:linear-gradient(160deg,#3a2050,#2a2255)!important}
+html[data-theme=dark] .chart-bars i{background:linear-gradient(#ff9ccd,#a57bf0)!important}
+html[data-theme=dark] .ripple{background:rgba(255,255,255,.3)}

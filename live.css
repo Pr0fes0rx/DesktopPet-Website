@@ -1,0 +1,88 @@
+/* live.css — cute decorative layer (visual + sound only, no real functions) */
+:root{--acc:#b7a0ff;--acc2:#f0a6d0;--cute-r:30px}
+.section-kicker{color:var(--acc)}
+/* cards: kawaii sticker look */
+.feature-card{--mx:50%;--my:50%;position:relative;border-radius:var(--cute-r)!important;transition:transform .35s cubic-bezier(.3,1.5,.5,1),box-shadow .35s;border:2px solid color-mix(in srgb,var(--acc) 38%,transparent)!important}
+.feature-card:hover{transform:translateY(-8px) rotate(-.6deg);box-shadow:0 18px 44px color-mix(in srgb,var(--acc) 28%,transparent)}
+.feature-card:nth-child(even):hover{transform:translateY(-8px) rotate(.6deg)}
+.feature-card::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(260px circle at var(--mx) var(--my),color-mix(in srgb,var(--acc2) 20%,transparent),transparent 70%);opacity:0;transition:opacity .3s}
+.feature-card:hover::after{opacity:1}
+.feature-card::before{content:"";position:absolute;top:14px;inset-inline-end:60px;width:8px;height:8px;border-radius:50%;background:var(--acc2);box-shadow:16px 6px 0 -1px var(--acc),-14px 8px 0 -2px color-mix(in srgb,var(--acc2) 60%,transparent);opacity:.7;animation:cBob 3s ease-in-out infinite}
+.feature-icon{border-radius:18px!important;animation:cBob 3.2s ease-in-out infinite}
+.feature-card:hover .feature-icon{animation:cWiggle .6s}
+@keyframes cBob{50%{transform:translateY(-4px)}}
+@keyframes cWiggle{25%{transform:rotate(-14deg) scale(1.15)}75%{transform:rotate(14deg) scale(1.15)}}
+/* inner previews: pastel, rounded, dashed */
+.chart-preview,.calendar-preview,.note-preview,.prayer-preview,.shop-preview,.reminder-list>div,.settings-mock{border-radius:24px!important;background:linear-gradient(160deg,color-mix(in srgb,var(--acc) 14%,transparent),color-mix(in srgb,var(--acc2) 10%,transparent))!important;border:2px dashed color-mix(in srgb,var(--acc) 40%,transparent)!important}
+.reminder-list>div{border-radius:20px!important;border-style:solid!important}
+.settings-mock{border-style:solid!important;border-width:2px!important}
+.reminder-list{gap:.6rem!important}
+.reminder-list>div,.calendar-event,.prayer-preview>div,.shop-preview>span,.chart-bars i,.quick-stat,.tag-row span,.swatches i,.setting-toggle-row,.language-select,.settings-sidebar span,.note-reminder,.mascot,.floating-card{cursor:pointer}
+/* chart */
+.chart-bars i{position:relative;border-radius:12px 12px 6px 6px!important;transform-origin:bottom;transform:scaleY(0);transition:transform .8s cubic-bezier(.2,1.5,.3,1),filter .2s}
+.in-view .chart-bars i{transform:scaleY(1)}
+.in-view .chart-bars i:nth-child(2){transition-delay:.08s}.in-view .chart-bars i:nth-child(3){transition-delay:.16s}.in-view .chart-bars i:nth-child(4){transition-delay:.24s}.in-view .chart-bars i:nth-child(5){transition-delay:.32s}.in-view .chart-bars i:nth-child(6){transition-delay:.4s}.in-view .chart-bars i:nth-child(7){transition-delay:.48s}
+.in-view .chart-bars i:hover{transform:scaleY(1.06) scaleX(1.12);transition-delay:0s}
+.chart-bars i:hover,.chart-bars i.sel{filter:brightness(1.2) saturate(1.3)}
+.chart-bars i::after{content:attr(data-v);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:var(--acc2);color:#3b1d33;font:800 .68rem/1 inherit;padding:.3rem .5rem;border-radius:99px;opacity:0;pointer-events:none;transition:.2s;white-space:nowrap}
+.chart-bars i:hover::after,.chart-bars i.sel::after{opacity:1}
+.xp-progress i{width:0;transition:width 1.4s .5s cubic-bezier(.3,1.4,.5,1)}
+.in-view .xp-progress i{width:var(--xp,68%)}
+/* rows */
+.reminder-list>div,.calendar-event{transition:transform .25s cubic-bezier(.3,1.6,.5,1),opacity .3s}
+.reminder-list>div:hover,.calendar-event:hover{transform:scale(1.04)}
+.reminder-list>div.done,.calendar-event.done{opacity:.55}
+.lv-check{width:22px;height:22px;border-radius:50%;border:2px solid var(--acc2);display:inline-grid;place-items:center;font-size:.7rem;margin-inline-start:.5rem;transition:.3s cubic-bezier(.3,1.8,.5,1);flex:none}
+.done>.lv-check{background:var(--acc2);color:#3b1d33;transform:scale(1.2) rotate(360deg)}
+.done>.lv-check::before{content:"♥"}
+/* note */
+.note-lines i{animation:cType 2.6s ease-in-out infinite alternate}
+.note-lines i:nth-child(2){animation-delay:.3s}.note-lines i:nth-child(3){animation-delay:.6s}
+@keyframes cType{from{transform:scaleX(.5);transform-origin:right}to{transform:scaleX(1);transform-origin:right}}
+[dir=ltr] .note-lines i{transform-origin:left!important}
+.note-reminder:hover{animation:cWiggle .6s}
+/* prayer */
+.prayer-preview>div{position:relative;border-radius:16px!important;transition:transform .3s cubic-bezier(.3,1.6,.5,1),background .3s}
+.prayer-preview>div:hover{transform:translateY(-6px) scale(1.06)}
+.prayer-preview>div:nth-child(3){background:color-mix(in srgb,var(--acc2) 30%,transparent);box-shadow:0 0 0 2px var(--acc2);animation:cBob 2.4s ease-in-out infinite}
+.prayer-preview>div:nth-child(3)::after{content:"🌙";position:absolute;top:-10px;inset-inline-end:-6px;font-size:.8rem}
+.prayer-preview>div.ring{animation:cWiggle .6s}
+/* shop */
+.shop-preview>span{border-radius:18px!important;transition:transform .3s cubic-bezier(.3,1.8,.5,1),box-shadow .3s}
+.shop-preview>span:hover{transform:translateY(-8px) rotate(-8deg) scale(1.18)}
+.shop-preview>span.eq{box-shadow:0 0 0 3px var(--acc2),0 0 26px color-mix(in srgb,var(--acc2) 60%,transparent);animation:cPop .5s}
+@keyframes cPop{50%{transform:scale(1.3) rotate(8deg)}}
+/* hero & quick-stats */
+.focus-card{animation:cBob 4s ease-in-out infinite;border-radius:26px!important}
+.focus-card:active{animation:cPop .4s}
+.focus-card .focus-track span{background:linear-gradient(90deg,var(--acc),var(--acc2))!important;background-size:200% 100%;animation:cShine 3s linear infinite}
+@keyframes cShine{to{background-position:-200% 0}}
+.mood-card{animation:cBob 3.4s .6s ease-in-out infinite}
+.mascot{transform-origin:50% 100%}
+.mascot.hop{animation:cHop .6s cubic-bezier(.3,1.6,.5,1)}
+@keyframes cHop{30%{transform:translateY(-30px) scaleY(1.05)}60%{transform:translateY(0) scale(1.06,.94)}}
+.quick-stat{border-radius:26px!important;transition:transform .3s cubic-bezier(.3,1.7,.5,1),box-shadow .3s;border:2px solid color-mix(in srgb,var(--acc) 35%,transparent)!important}
+.quick-stat:hover{transform:translateY(-6px) scale(1.04);box-shadow:0 14px 32px color-mix(in srgb,var(--acc2) 30%,transparent)}
+.quick-stat:hover .quick-icon{animation:cWiggle .6s}
+.quick-stat.pop{animation:cPop .45s}
+/* extras mock */
+.tag-row span{border-radius:99px!important;transition:transform .25s cubic-bezier(.3,1.8,.5,1),background .25s}
+.tag-row span:hover{transform:translateY(-4px) rotate(-3deg) scale(1.08);background:color-mix(in srgb,var(--acc2) 35%,transparent)}
+.swatches i{transition:transform .25s cubic-bezier(.3,1.8,.5,1),box-shadow .25s}
+.swatches i:hover{transform:scale(1.3)}
+.swatches i.on{box-shadow:0 0 0 3px #fff,0 0 0 5px currentColor}
+.setting-toggle-row i{transition:.3s}
+.settings-sidebar span:hover,.language-select:hover{transform:scale(1.04)}
+.settings-sidebar span,.language-select{transition:transform .25s cubic-bezier(.3,1.7,.5,1)}
+/* floating deco */
+.lv-deco{position:absolute;pointer-events:none;opacity:.55;animation:cFloat var(--d,7s) ease-in-out infinite;font-size:var(--s,1rem)}
+@keyframes cFloat{50%{transform:translateY(-16px) rotate(14deg)}}
+.lv-spark{position:fixed;pointer-events:none;z-index:99;font-size:1.05rem;animation:cUp .95s ease-out forwards}
+@keyframes cUp{to{transform:translate(var(--dx),-80px) scale(.4) rotate(40deg);opacity:0}}
+.lv-bubble{position:fixed;z-index:99;pointer-events:none;background:#fff;color:#4a2a55;font:700 .8rem/1 inherit;padding:.5rem .8rem;border-radius:99px 99px 99px 6px;box-shadow:0 8px 24px rgba(0,0,0,.25);animation:cUp 1.3s ease-out forwards;--dx:0px}
+.reveal-up{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.reveal-up.in-view{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01s!important}}
+.reminder-list{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important}
+.reminder-list>div{color:inherit!important;box-shadow:none!important}
+.reminder-list>div small,.reminder-list>div span{color:inherit!important}
